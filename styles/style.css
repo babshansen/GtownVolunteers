@@ -1,0 +1,61 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	background-color: red;
+}
+
+.main-container {
+	max-width: 1200px;
+	min-height: 500px;
+	margin: 0 auto;
+}
+
+.nav-background{}
+
+.logo-hand {
+	/*margin-top: -140px;*/
+	max-width: 310px;
+	height: 130px;
+	background-color: rgba(0, 170, 172, .80);
+}
+
+
+.navigation {
+	/*margin-top: px;*/
+	height:300px;
+	margin-left: 90px;
+	max-width: 890px;
+	background-color: gray;
+
+
+}
+
+.logo-container {
+	max-width: 200px;
+	max-height: 155px;
+	padding-left: 16px;
+	padding-top:19px;
+	background-color: #FEFFCD;
+}
+
+#logo {
+	width: 90%;
+	height: auto;
+	background-color: #FEFFCD;
+
+}
+
+.navigation {
+	margin-left: 200px;
+	max-height: 30px;
+	max-width: 880px;
+
+}
+
+.button-nav {
+	color: #ffffff;
+	margin-left: 200px;
+	background-color: #7fb438;
+	display: flex;
+
+}
