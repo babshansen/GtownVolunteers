@@ -16,9 +16,9 @@ a{
 
 .nav-background{}
 
-.nav-container{
+/*.nav-container{
 	display: flex;
-}
+}*/
 
 .logo-hand {
 	/*margin-top: -140px;*/
@@ -35,6 +35,10 @@ a{
 
 */
 
+.inline {
+	display: inline-block;
+}
+
 .nav-about{
 	min-width: 171px;
 	height: 130px;
@@ -42,8 +46,11 @@ a{
 	position: relative;
 }
 
+.nav-container > div {
+	margin:0;
+}
+
 .about a{
-	margin-left: -40px;
 	width: 171px;
 	height: 24px;
 	padding-top: 6px;
@@ -61,7 +68,6 @@ a{
 }
 
 .start a{
-	margin-left: -40px;
 	min-width: 240px;
 	height: 24px;
 	padding-top: 6px;
@@ -79,7 +85,6 @@ a{
 }
 
 .volunteer a{
-	margin-left: -40px;
 	min-width: 240px;
 	height: 24px;
 	padding-top: 6px;
@@ -88,6 +93,40 @@ a{
 	position: absolute;
 	bottom: 0;
 }
+
+.nav-register{
+	width: 240px;
+	height: 130px;
+	background-color: rgba(0, 170, 172, .50);
+	position: relative;
+}
+
+.register a{
+	min-width: 240px;
+	height: 24px;
+	padding-top: 6px;
+	background-color: rgb(0, 170, 172);
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.logo-container {
+	max-width: 200px;
+	max-height: 155px;
+	padding-left: 16px;
+	padding-top:19px;
+	background-color: rgba(254, 255, 205, .80);
+}
+
+#logo {
+	width: 40%;
+	height: auto;
+	background-color: #FEFFCD;
+
+}
+
+
 /* 
 .nav ul .overlay{
 	background-color: rgba(0, 170, 172, .80);
@@ -109,20 +148,7 @@ a{
 
 /* Old Navigation Styles
 
-.logo-container {
-	max-width: 200px;
-	max-height: 155px;
-	padding-left: 16px;
-	padding-top:19px;
-	background-color: #FEFFCD;
-}
 
-#logo {
-	width: 40%;
-	height: auto;
-	background-color: #FEFFCD;
-
-}
 
 .navigation {
 	margin-left: 200px;
