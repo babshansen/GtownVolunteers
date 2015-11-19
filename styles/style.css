@@ -45,8 +45,8 @@ a{
 .about a{
 	margin-left: -40px;
 	width: 171px;
-	height: 22px;
-	padding-top: 8px;
+	height: 24px;
+	padding-top: 6px;
 	background-color: #7fb438;
 	text-align: center;
 	position: absolute;
@@ -63,8 +63,8 @@ a{
 .start a{
 	margin-left: -40px;
 	min-width: 240px;
-	height: 22px;
-	padding-top: 8px;
+	height: 24px;
+	padding-top: 6px;
 	background-color: #7fb438;
 	text-align: center;
 	position: absolute;
@@ -81,8 +81,8 @@ a{
 .volunteer a{
 	margin-left: -40px;
 	min-width: 240px;
-	height: 22px;
-	padding-top: 8px;
+	height: 24px;
+	padding-top: 6px;
 	background-color: #7fb438;
 	text-align: center;
 	position: absolute;
