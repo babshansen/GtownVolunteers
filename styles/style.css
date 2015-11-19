@@ -12,10 +12,7 @@ body {
 
 .nav-background{}
 
-.nav {
-	color: #ffffff;
-
-}
+.nav-container{}
 
 .logo-hand {
 	/*margin-top: -140px;*/
@@ -24,11 +21,34 @@ body {
 	background-color: rgba(0, 170, 172, .80);
 }
 
-.nav ul{
+/* .nav ul{
 	width: 171px;
 	height: 40px;
+	background-color: #EEE;
+} 
+
+*/
+
+.nav-about{
+	width: 171px;
+	height: 130px;
+	background-color: #EEE;
+	position: relative;
 }
 
+.about a{
+	width: 171px;
+	height: 30px;
+	padding-top: 8px;
+	background-color: #7fb438;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+
+}
+
+
+/* 
 .nav ul .overlay{
 	background-color: rgba(0, 170, 172, .80);
 	width: 100%;
@@ -43,10 +63,9 @@ body {
 	position: absolute;
 	bottom: 0;
 }
+ */
 
 
-
-}
 
 /* Old Navigation Styles
 
