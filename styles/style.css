@@ -17,12 +17,14 @@ a {
 
 /* NAVIGATION */
 
-.nav-background{}
-
 .nav-container{
 	display: flex;
 	position: absolute;
 	Top: 0;
+}
+
+.nav-container > div {
+	margin:0;
 }
 
 .logo-hand {
@@ -35,34 +37,58 @@ a {
 	font-size: 22px;
 	text-decoration: none;
 	letter-spacing: .5px;
-}
-
-.nav-container > div {
-	margin:0;
-}
-
-.nav-about{
-	width: 171px;
-	height: 130px;
-	background-color: rgba(0, 170, 172, .90);
-	position: relative;
-}
-
-.about a{
-	width: 171px;
-	min-height: 24px;
-	padding: 3px;
 	background-color: #7fb438;
 	text-align: center;
 	position: absolute;
 	bottom: 0;
 }
 
+.nav-about {
+	width: 171px;
+	height: 130px;
+	position: relative;
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.about-sibling {
+	width: 171px;
+	height: 130px;
+	position: absolute;
+	top:0;
+}
+
+.about a{
+	width: 171px;
+	min-height: 24px;
+	padding: 3px;
+
+}
+
+.nav-about:hover{
+	background-color: rgba(0, 170, 172, .00);
+}
+
+.about-sibling:hover{
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.about a:hover{
+	background-color: #f26b21;
+}
+
+
 .nav-start{
 	width: 240px;
 	height: 130px;
-	background-color: rgba(0, 170, 172, .90);
 	position: relative;
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.start-sibling {
+	width: 240px;
+	height: 130px;
+	position: absolute;
+	top:0;
 }
 
 .start a{
@@ -75,11 +101,30 @@ a {
 	bottom: 0;
 }
 
+.nav-start:hover{
+	background-color: rgba(0, 170, 172, .00);
+}
+
+.start-sibling:hover{
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.start a:hover{
+	background-color: #f26b21;
+}
+
 .nav-volunteer{
 	width: 240px;
 	height: 130px;
-	background-color: rgba(0, 170, 172, .90);
 	position: relative;
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.volunteer-sibling {
+	width: 240px;
+	height: 130px;
+	position: absolute;
+	top:0;
 }
 
 .volunteer a{
@@ -90,6 +135,18 @@ a {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
+}
+
+.nav-volunteer:hover{
+	background-color: rgba(0, 170, 172, .00);
+}
+
+.volunteer-sibling:hover{
+	background-color: rgba(0, 170, 172, .90);
+}
+
+.volunteer a:hover{
+	background-color: #f26b21;
 }
 
 .nav-register{
@@ -132,13 +189,6 @@ a {
 
 /* NAV HOVER */
 
-.nav-about:hover {
-	background-color: rgba(0, 170, 172, .0);
-}
-
-.about a:hover{
-	background-color: #f26b21;
-}
 
 /* BODY */
 
