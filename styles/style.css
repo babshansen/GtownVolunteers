@@ -4,8 +4,13 @@ body {
 	width:100%;
 	background-color: gray;
 	letter-spacing: .5px;
-
 }
+
+ul li {
+	list-style-type: none;
+}
+
+
 
 a {
 	color: #FFFFFF;
@@ -29,7 +34,7 @@ a {
 }
 
 .nav-container > div {
-	margin:0;
+	margin: 0;
 }
 
 .logo-hand {
@@ -186,6 +191,7 @@ a {
 	background-color: rgba(254, 255, 205, .85);
 	position:absolute;
 	top: 55px;
+	z-index:1;
 }
 
 .logo-container p {
@@ -195,5 +201,120 @@ a {
 	padding-top: 5px;
 }
 
-/* BODY */
+/*.responsive-wrapper {
+    max-width: 1200px;	
+    position: absolute;
+    top: 130px;
+    margin: 0;
 
+}*/
+
+/* CAROUSEL */
+
+.carousel{
+    margin: 0;
+    max-width: 1200px;	
+    position: absolute;
+    top: 130px;
+    overflow: hidden;
+    height: 100%;
+	z-index: 0;
+}
+
+.panes{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    position:relative;
+
+    width:400%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+        
+    -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+    animation:carousel 30s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:25%; /* 100 / number of panes */
+}
+
+.carousel img{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+/*@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}*/
+
+.CTA-buttons{
+    max-width: 1200px;	
+    position: absolute;
+    top: 35%;
+    margin-left: 80px;
+}
+
+.buttons {
+	text-align: center;
+	width: 188px;
+	height: 16px;
+	padding: 7px 13px 11px 13px;
+	border: 3px solid rgba(242, 107, 33, .85);
+	margin: 10px;
+	background-color: rgba(242, 107, 33, .85);
+}
+
+.buttons a{
+	font-size: 18px;
+}
+.buttons:hover{
+	color: rgba(242, 107, 33, .90);
+	background-color: #FFFFFF;
+}
+
+.buttons:hover a{
+	color: rgba(242, 107, 33, .99);
+}
+
+#start {
+	top: 25%;
+}
+
+.quotebox {
+    max-width: 1200px;
+    height:100%;
+    position: absolute;	
+    top: 35%;
+    margin-left: 80px;
+    z-index:+2;
+}
+
+.quote {
+    float: right;
+	text-align: center;
+	max-width: 30%;
+	min-height: 16px;
+	padding: 7px 13px 11px 13px;
+	border: 3px solid rgba(127, 180, 48, .85);
+	margin: 10px;
+	background-color: rgba(127, 180, 48, .85);
+}
