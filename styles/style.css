@@ -218,7 +218,6 @@ a {
     top: 130px;
     overflow: hidden;
     height: 100%;
-	z-index: 0;
 }
 
 .panes{
@@ -266,6 +265,22 @@ a {
     100%  { left:0; }
 }*/
 
+.quotebox {
+    max-width: 1200px;
+    min-height: 300px;
+    position: relative;	
+    top: 45%;
+    z-index: +1;
+}
+
+.quote {
+    float: right;
+	max-width: 30%;
+	padding: 7px 13px 11px 13px;
+	border: 3px solid rgba(127, 180, 48, .85);
+	background-color: rgba(127, 180, 48, .85);
+}
+
 .CTA-buttons{
     max-width: 1200px;	
     position: absolute;
@@ -286,6 +301,7 @@ a {
 .buttons a{
 	font-size: 18px;
 }
+
 .buttons:hover{
 	color: rgba(242, 107, 33, .90);
 	background-color: #FFFFFF;
@@ -299,22 +315,4 @@ a {
 	top: 25%;
 }
 
-.quotebox {
-    max-width: 1200px;
-    height:100%;
-    position: absolute;	
-    top: 35%;
-    margin-left: 80px;
-    z-index:+2;
-}
 
-.quote {
-    float: right;
-	text-align: center;
-	max-width: 30%;
-	min-height: 16px;
-	padding: 7px 13px 11px 13px;
-	border: 3px solid rgba(127, 180, 48, .85);
-	margin: 10px;
-	background-color: rgba(127, 180, 48, .85);
-}
