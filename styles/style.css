@@ -21,11 +21,14 @@ a {
 
 .main-container {
 	max-width: 1200px;
-	min-height: 500px;
 	margin: 0 auto;
 }
 
 /* NAVIGATION */
+
+.header-container{
+	height: 130px;
+	}
 
 .nav-container {
 	display: flex;
@@ -214,10 +217,9 @@ a {
 .carousel{
     margin: 0;
     max-width: 1200px;	
-    position: absolute;
-    top: 130px;
+    top: 0;
     overflow: hidden;
-    height: 100%;
+    position: relative;
 }
 
 .panes{
@@ -266,25 +268,38 @@ a {
 }*/
 
 .quotebox {
-    max-width: 1200px;
-    min-height: 300px;
-    position: relative;	
-    top: 45%;
-    z-index: +1;
+	max-width: 50%;
+    position: absolute;
+    top: 75px;
+    right: 0;
 }
 
 .quote {
     float: right;
-	max-width: 30%;
-	padding: 7px 13px 11px 13px;
+	padding: 10px 10px 5px 50px;
 	border: 3px solid rgba(127, 180, 48, .85);
 	background-color: rgba(127, 180, 48, .85);
 }
 
+.quote h1{
+	color: #FFFFFF;
+	font-size: 35px;
+	font-weight: 500;
+	text-indent: -13px;
+}
+
+.quote p{
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 50px;
+	line-height: 10%;
+}
+
 .CTA-buttons{
-    max-width: 1200px;	
+    max-width: 1200px;
+    max-height: 560px;	
     position: absolute;
-    top: 35%;
+    top: 42%;
     margin-left: 80px;
 }
 
@@ -314,5 +329,74 @@ a {
 #start {
 	top: 25%;
 }
+
+.bottom-container h3{
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%;
+	background-color: rgb(0, 170, 172);
+	height: 30px; 
+	text-indent: 90px;
+}
+
+
+
+.number-flex{
+	display: flex;
+	margin-left: 90px;
+
+}
+
+.number-header{
+	width:160px;
+	display: flex;
+}
+
+.space {
+	width:30%;
+}
+
+.1 .2 .3 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.line {
+	width:41px;
+	height:3px;
+	margin: 16px 0px 0px 0px;
+	background-color:rgb(127, 180, 48);
+}
+
+.circle {
+	height: 35px;
+	width: 35px;
+	margin-right: 11px;
+	margin-left: 11px;
+	background-color:rgb(127, 180, 48);
+	text-align: center;
+	line-height: 0;
+	border-radius: 35px;
+
+}
+
+.container p{
+	text-align: center;
+}
+
+.latest {
+}
+/*.number-wrapper {
+	position: absolute;
+	top:75%;
+	margin: 0;
+    max-width: 1200px;	
+    position: absolute;
+    top: 130px;
+    overflow: hidden;
+    height: 100%;
+}*/
+
 
 
