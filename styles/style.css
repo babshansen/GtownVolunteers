@@ -6,6 +6,16 @@ body {
 	letter-spacing: .5px;
 }
 
+p {
+	font-size: 14px;
+	color: #39270b;
+}
+
+h2 {
+	color:#FFFFFF;
+	font-weight: 500;
+}
+
 ul li {
 	list-style-type: none;
 }
@@ -204,13 +214,6 @@ a {
 	padding-top: 5px;
 }
 
-/*.responsive-wrapper {
-    max-width: 1200px;	
-    position: absolute;
-    top: 130px;
-    margin: 0;
-
-}*/
 
 /* CAROUSEL */
 
@@ -231,10 +234,11 @@ a {
     width:400%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
         
-    -moz-animation:carousel 30s infinite;
-    -webkit-animation:carousel 30s infinite;
-    animation:carousel 30s infinite;
+    -moz-animation:carousel 60s infinite;
+    -webkit-animation:carousel 60s infinite;
+    animation:carousel 60s infinite;
 }
+
 .panes > li{
     position:relative;
     float:left;
@@ -330,37 +334,39 @@ a {
 	top: 25%;
 }
 
+/* BOTTOM CONTENT */
+
+
 .bottom-container h3{
 	margin: 0;
 	font-size: 20px;
-	font-weight: 500;
-	line-height: 150%;
+	font-weight: 300;
+	color: #FFFFFF;
+
+}
+
+.subhead {
 	background-color: rgb(0, 170, 172);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 150%;
 	height: 30px; 
 	text-indent: 90px;
 }
 
-
-
 .number-flex{
 	display: flex;
-	margin-left: 90px;
+	margin-left: 60px 
 
 }
 
 .number-header{
-	width:160px;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
 	display: flex;
 }
 
-.space {
-	width:30%;
-}
-
-.1 .2 .3 {
-	margin-left: 10%;
-	margin-right: 10%;
-}
 
 .line {
 	width:41px;
@@ -378,25 +384,37 @@ a {
 	text-align: center;
 	line-height: 0;
 	border-radius: 35px;
-
 }
 
-.container p{
-	text-align: center;
+.container {
+	position:relative;
+	margin:20px;
+}
+
+.container p {
+	padding-top:40px;
+	text-align:center;
+}
+
+.number-wrapper {
+	float:left;
+	width:65%;
+	min-height:220px;
+	background-color:white;
 }
 
 .latest {
+	width:35%;
+	min-height:220px;
+	float:left;
+	background:url(../media/latest-project.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size:cover;
+	overflow:hidden;
 }
-/*.number-wrapper {
-	position: absolute;
-	top:75%;
-	margin: 0;
-    max-width: 1200px;	
-    position: absolute;
-    top: 130px;
-    overflow: hidden;
-    height: 100%;
-}*/
+
 
 
 
