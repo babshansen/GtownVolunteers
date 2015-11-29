@@ -6,6 +6,16 @@ body {
 	letter-spacing: .5px;
 }
 
+p {
+	font-size: 14px;
+	color: #39270b;
+}
+
+h2 {
+	color:#FFFFFF;
+	font-weight: 500;
+}
+
 ul li {
 	list-style-type: none;
 }
@@ -21,11 +31,14 @@ a {
 
 .main-container {
 	max-width: 1200px;
-	min-height: 500px;
 	margin: 0 auto;
 }
 
 /* NAVIGATION */
+
+.header-container{
+	height: 130px;
+	}
 
 .nav-container {
 	display: flex;
@@ -201,24 +214,15 @@ a {
 	padding-top: 5px;
 }
 
-/*.responsive-wrapper {
-    max-width: 1200px;	
-    position: absolute;
-    top: 130px;
-    margin: 0;
-
-}*/
 
 /* CAROUSEL */
 
 .carousel{
     margin: 0;
     max-width: 1200px;	
-    position: absolute;
-    top: 130px;
+    top: 0;
     overflow: hidden;
-    height: 100%;
-	z-index: 0;
+    position: relative;
 }
 
 .panes{
@@ -230,10 +234,11 @@ a {
     width:400%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
         
-    -moz-animation:carousel 30s infinite;
-    -webkit-animation:carousel 30s infinite;
-    animation:carousel 30s infinite;
+    -moz-animation:carousel 60s infinite;
+    -webkit-animation:carousel 60s infinite;
+    animation:carousel 60s infinite;
 }
+
 .panes > li{
     position:relative;
     float:left;
@@ -266,10 +271,39 @@ a {
     100%  { left:0; }
 }*/
 
-.CTA-buttons{
-    max-width: 1200px;	
+.quotebox {
+	max-width: 50%;
     position: absolute;
-    top: 35%;
+    top: 75px;
+    right: 0;
+}
+
+.quote {
+    float: right;
+	padding: 10px 10px 5px 50px;
+	border: 3px solid rgba(127, 180, 48, .85);
+	background-color: rgba(127, 180, 48, .85);
+}
+
+.quote h1{
+	color: #FFFFFF;
+	font-size: 35px;
+	font-weight: 500;
+	text-indent: -13px;
+}
+
+.quote p{
+	color: #FFFFFF;
+	text-align: right;
+	padding-right: 50px;
+	line-height: 10%;
+}
+
+.CTA-buttons{
+    max-width: 1200px;
+    max-height: 560px;	
+    position: absolute;
+    top: 42%;
     margin-left: 80px;
 }
 
@@ -286,6 +320,7 @@ a {
 .buttons a{
 	font-size: 18px;
 }
+
 .buttons:hover{
 	color: rgba(242, 107, 33, .90);
 	background-color: #FFFFFF;
@@ -299,22 +334,138 @@ a {
 	top: 25%;
 }
 
-.quotebox {
-    max-width: 1200px;
-    height:100%;
-    position: absolute;	
-    top: 35%;
-    margin-left: 80px;
-    z-index:+2;
+/* BOTTOM CONTENT */
+
+
+.bottom-container h3{
+	margin: 0;
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+
 }
 
-.quote {
-    float: right;
-	text-align: center;
-	max-width: 30%;
-	min-height: 16px;
-	padding: 7px 13px 11px 13px;
-	border: 3px solid rgba(127, 180, 48, .85);
-	margin: 10px;
-	background-color: rgba(127, 180, 48, .85);
+.subhead {
+	background-color: rgb(0, 170, 172);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 150%;
+	height: 30px; 
+	text-indent: 90px;
 }
+
+.number-flex{
+	display: flex;
+	margin-left: 60px 
+
+}
+
+.number-header{
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	display: flex;
+}
+
+
+.line {
+	width:41px;
+	height:3px;
+	margin: 16px 0px 0px 0px;
+	background-color:rgb(127, 180, 48);
+}
+
+.circle {
+	height: 35px;
+	width: 35px;
+	margin-right: 11px;
+	margin-left: 11px;
+	background-color:rgb(127, 180, 48);
+	text-align: center;
+	line-height: 0;
+	border-radius: 35px;
+}
+
+.container {
+	position:relative;
+	margin:20px;
+}
+
+.container p {
+	padding-top:40px;
+	text-align:center;
+}
+
+.number-wrapper {
+	float:left;
+	width:65%;
+	min-height:220px;
+	background-color:white;
+}
+
+.latest{
+	width:35%;
+	min-height:220px;
+	position: relative;
+	float:left;
+}
+
+.image {
+	width:100%;
+	height: 100%;
+	position: absolute;
+	background:url(../media/latest-project.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.description {
+	height: 100%;
+	background-color: rgba(57, 39, 11, .8);
+	position: absolute;
+}
+
+.latest h3{
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 20px;
+
+}
+
+.latest h4{
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.latest a{
+	line-height: 100%;
+}
+
+.latest p{
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 125%;
+	color: #FFFFFF;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.rollover {
+	min-height:220px;
+	width:100%;
+	background-color: rgba(57, 39, 11, .7);
+	position: absolute;
+	top:0;
+}
+
+.rollover:hover{
+	background-color: rgba(57, 39, 11, .0);
+}
+
+
