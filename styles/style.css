@@ -19,10 +19,12 @@ h2 {
 }
 
 ul li {
-	list-style-type: none;
+	font-size: 14px;
+	font-weight: 500;
+	color: #39270b;
+	line-height: 135%
+
 }
-
-
 
 a {
 	color: #FFFFFF;
@@ -550,5 +552,13 @@ a {
 
 .aboutheader {
 	height:30px;
+	width:100%;
+	margin-left:0;
 	background-color: rgb(0, 170, 172);
+}
+
+.aboutheader h2{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%
 }
