@@ -8,7 +8,9 @@ body {
 
 p {
 	font-size: 14px;
+	font-weight: 500;
 	color: #39270b;
+	line-height: 140%
 }
 
 h2 {
@@ -17,10 +19,12 @@ h2 {
 }
 
 ul li {
-	list-style-type: none;
+	font-size: 14px;
+	font-weight: 500;
+	color: #39270b;
+	line-height: 135%
+
 }
-
-
 
 a {
 	color: #FFFFFF;
@@ -389,8 +393,12 @@ a {
 	margin-left: 11px;
 	background-color:rgb(127, 180, 48);
 	text-align: center;
-	line-height: 0;
+	line-height: 0em;
 	border-radius: 35px;
+}
+
+.circle h2{
+	margin-top: 18px
 }
 
 .container {
@@ -495,45 +503,74 @@ a {
 .breadcrumbs {
 	margin-left: 35%;
 	margin-right: 15%;
+	margin-bottom: 30px;
 }
 
 .breadcrumbs a{
 	font-size: 12px;
+	font-weight: 500;
 	color: rgb(57, 39, 11);
 }	
 
 .section1 {
 	margin-left: 35%;
 	margin-right: 15%;
+	margin-bottom: 30px;
 }
 
 .about-number-wrapper {
-	magin:0 auto;
-	width:100%;
-	min-height:220px;
+	margin-top: 40px;
+	width: 100%;
+	min-height: 220px;
 }
 
 .aline {
-	width:70%;
-	height:3px;
+	width: 85%;
+	height: 3px;
 	margin: 16px 0px 0px 0px;
-	background-color:rgb(127, 180, 48);
+	background-color: rgb(127, 180, 48);
 }
 
 .acontainer {
 	position:relative;
-	margin:20px;
+	margin:0px;
 }
 
 .acontainer p {
-	padding-top:40px;
+	font-size: 18px;
 	text-align:left;
+	margin-left: 60px;
+	margin-bottom:50px;
+	margin-top: 10px;
 }
 
 .anumber-header{
-	position:absolute;
-	left:50%;
-	transform:translateX(-50%);
+	position:relative;
+	left:0%;
 	display: flex;
 }
 
+.aboutheader {
+	height:30px;
+	width:50%;
+	background-color: rgb(0, 170, 172);
+}
+
+.aboutheader h2{
+	margin-left:70%;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%
+}
+
+.section2 {
+	margin-left: 35%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
+
+.section3 {
+	margin-left: 35%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
