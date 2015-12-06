@@ -10,7 +10,7 @@ p {
 	font-size: 14px;
 	font-weight: 500;
 	color: #39270b;
-	line-height: 135%
+	line-height: 140%
 }
 
 h2 {
@@ -504,7 +504,6 @@ a {
 	margin-left: 35%;
 	margin-right: 15%;
 	margin-bottom: 30px;
-
 }
 
 .breadcrumbs a{
@@ -516,6 +515,7 @@ a {
 .section1 {
 	margin-left: 35%;
 	margin-right: 15%;
+	margin-bottom: 30px;
 }
 
 .about-number-wrapper {
@@ -552,13 +552,25 @@ a {
 
 .aboutheader {
 	height:30px;
-	width:100%;
-	margin-left:0;
+	width:50%;
 	background-color: rgb(0, 170, 172);
 }
 
 .aboutheader h2{
+	margin-left:70%;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 150%
+}
+
+.section2 {
+	margin-left: 35%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
+
+.section3 {
+	margin-left: 35%;
+	margin-right: 15%;
+	margin-bottom: 50px;
 }
