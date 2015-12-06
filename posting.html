@@ -101,90 +101,45 @@
 
 			<div class="main-view">
 
-				<div class="breadcrumbs"><a href="index.html">Home/</a><a href="start.html">Register</a></div>
+				<div class="breadcrumbs"><a href="index.html">Home/</a><a href="posting.html">Start A Project</a></div>
 
 
 				<div class="section">
-					<h3>REGISTER</h3>
-					<p>Great you are ready to register! This way you can manage your projects and be able to receive volunteer's contact information when they sign up for projects you organize. We like sharing but we will NEVER share or sell your contact information.</p>
+					<h3>START A PROJECT</h3>
+					<p>Awesome! You’re ready for another, don’t forget to share your project on Facebook and Twitter or email firiends directly.</p>
 				</div>
 
-				<form class="form" id="register">
+				<form class="form" id="posting">
 				      
 			        <div id="aboutyou">
-			        	<legend>ABOUT YOU</legend>				          
+			        	<legend>ABOUT YOUR PROJECT</legend>				          
 			          	<form action="/" method="post">
-			          
-						<div class="double-row">
-							<div class="field-wrap">
-							<label>
-							First Name<span class="req">*</span>
-							</label>
-							<input type="text" required autocomplete="off" />
-							</div>
-
-							<div class="field-wrap">
-							<label>
-							Last Name<span class="req">*</span>
-							</label>
-							<input type="text"required autocomplete="off"/>
-							</div>
-						</div>
-
 
 				        <div class="field-wrap">
 							<label>
-							Organization
+							Title of Your Project<span class="req">*</span>
 							</label>
-							<input type="text" autocomplete="off"/>
+							<input type="text"required autocomplete="off"/>
 						</div>
 						
 						<div class="field-wrap">
 							<label>
-							Title
+							Description of Your Project<span class="req">*</span>
 							</label>
-							<input type="text" autocomplete="off"/>
-						</div>
-
-						<div class="field-wrap">
-							<label>
-							Email Address<span class="req">*</span>
-							</label>
-							<input type="email"required autocomplete="off"/>
-						</div>						
-
-						<div class="field-wrap">
-							<label>
-							Phone Number<span class="req">*</span>
-							</label>
-							<input type="tel"required autocomplete="off"/>
-						</div>
-			          
-						<div class="field-wrap">
-							<label>
-							Address1<span class="req">*</span>
-							</label>
-							<input type="text"required autocomplete="off"/>
-						</div>
-
-						<div class="field-wrap">
-							<label>
-							Address2<span class="req">*</span>
-							</label>
-							<input type="text"required autocomplete="off"/>
+							<textarea name="description"required autocomplete="off" cols"20" rows"4"/>Be specific by including who will this help, what your goal for the project is, and most important, what your are asking volunteers to do. </textarea>
 						</div>
 
 						<div class="triple-row">
 							<div class="field-wrap">
 							<label>
-							City<span class="req">*</span>
+							Date<span class="req">*</span>
 							</label>
 							<input type="text" required autocomplete="off" />
 							</div>
 
 							<div class="field-wrap">
 							<label>
-							State<span class="req">*</span>
+							Start Time<span class="req">*</span>
 							</label>
 							<form action="./" method="GET">
 								<select name="state">
@@ -246,37 +201,28 @@
 
 							<div class="field-wrap">
 							<label>
-							Zip<span class="req">*</span>
+							End Time<span class="req">*</span>
 							</label>
 							<input type="text"required autocomplete="off"/>
 							</div>
 						</div>
 
-			        	<legend>CREATE YOUR PROFILE</legend>				          
+						<div class="field-wrap">
+							<label>
+							Location of Project<span class="req">*</span>
+							</label>
+							<input type="text"required autocomplete="off"/>
+						</div>						
 
 						<div class="field-wrap">
 							<label>
-							Username<span class="req">*</span>
+							Organizer Name<span class="req">*</span>
 							</label>
 							<input type="text"required autocomplete="off"/>
 						</div>
 
-						<div class="field-wrap">
-							<label>
-							Set A Password<span class="req">*</span>
-							</label>
-							<input type="password"required autocomplete="off"/>
-						</div>
-
-						<div class="field-wrap">
-							<label>
-							Confirm Your Password<span class="req">*</span>
-							</label>
-							<input type="password"required autocomplete="off"/>
-						</div>
-
 					<div class="s-buttons active">
-					<a href="posting.html" id="create-your-account">PREVIEW YOUR POST</a>
+					<a href="posting.html" id="create-your-account">CREATE YOUR ACCOUNT</a>
 					</div>
 			          
 			       <!--  <button type="submit" class="button button-block"/>Create Your Account</button> -->
