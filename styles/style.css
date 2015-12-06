@@ -576,6 +576,13 @@ a {
 	margin-right: 225px;
 }
 
+.main-view h3{
+	color: rgb(242, 107, 33);
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 0px;
+}
+
 .breadcrumbs a{
 	font-size: 12px;
 	font-weight: 500;
@@ -586,6 +593,8 @@ a {
 	padding-top:40px;
 	padding-bottom: 40px;
 }
+
+/* FORMS */
 
 
 /* ABOUT PAGE */
