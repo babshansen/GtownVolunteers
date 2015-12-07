@@ -34,6 +34,7 @@ a {
 
 }
 
+
 .main-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -635,6 +636,29 @@ legend {
 .f-buttons:hover a{
 	color: rgb(242, 107, 33);
 }
+
+/* OVERLAY STYLING */
+
+.overlay {
+	width:100%;
+	height:110%;
+	position: absolute;
+	top:0;
+	background-color: rgba(57, 39, 11, .75);
+	z-index:3;
+}
+
+.dialog {
+	width:30%;
+	height:20%;
+	position: relative;
+	top: 20%;
+	left:40%;	
+	background-color: #FFFFFF;
+
+}
+
+
 
 /* ABOUT PAGE */
 
