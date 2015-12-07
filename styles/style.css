@@ -614,7 +614,26 @@ legend {
 }
 
 .f-buttons {
-	
+	text-align: center;
+	width: 420px;
+	height: 25px;
+	padding: 15px 0px 15px 0px;
+	border: 3px solid rgb(242, 107, 33);
+	margin: 10px;
+	background-color: rgb(242, 107, 33);
+}
+
+.f-buttons a{
+	font-size: 20px;
+}
+
+.f-buttons:hover{
+	color: rgb(242, 107, 33);
+	background-color: #FFFFFF;
+}
+
+.f-buttons:hover a{
+	color: rgb(242, 107, 33);
 }
 
 /* ABOUT PAGE */
