@@ -34,6 +34,7 @@ a {
 
 }
 
+
 .main-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -608,6 +609,56 @@ legend {
 	background-color: rgb(0, 170, 172);
 	padding: 2px 10px;
 	}
+
+.field-wrap {
+
+}
+
+.f-buttons {
+	text-align: center;
+	width: 420px;
+	height: 25px;
+	padding: 15px 0px 15px 0px;
+	border: 3px solid rgb(242, 107, 33);
+	margin: 10px;
+	background-color: rgb(242, 107, 33);
+}
+
+.f-buttons a{
+	font-size: 20px;
+}
+
+.f-buttons:hover{
+	color: rgb(242, 107, 33);
+	background-color: #FFFFFF;
+}
+
+.f-buttons:hover a{
+	color: rgb(242, 107, 33);
+}
+
+/* OVERLAY STYLING */
+
+.overlay {
+	width:100%;
+	height:110%;
+	position: absolute;
+	top:0;
+	background-color: rgba(57, 39, 11, .75);
+	z-index:3;
+}
+
+.dialog {
+	width:30%;
+	height:20%;
+	position: relative;
+	top: 20%;
+	left:40%;	
+	background-color: #FFFFFF;
+
+}
+
+
 
 /* ABOUT PAGE */
 
