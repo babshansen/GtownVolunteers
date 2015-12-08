@@ -649,15 +649,97 @@ legend {
 }
 
 .dialog {
-	width:30%;
-	height:20%;
+	width:665px;
+	height:315px;
 	position: relative;
 	top: 20%;
-	left:40%;	
+	left:30%;	
 	background-color: #FFFFFF;
-
 }
 
+.button-close {
+	width: 24px;
+	height:24px;
+	border-radius: 15px;
+	border: 3px solid rgb(57, 39, 11);
+	background-color:	#FFFFFF;
+	margin: 5px;
+	position: absolute;
+	right:0;
+}
+
+.button-close a {
+	padding: 5px 6px 5px 6px;
+	font-weight: 700;
+	font-size: 18px;
+	color: rgb(57, 39, 11);
+	line-height: 140%;
+}
+
+.bluebox {
+	position: absolute;
+	top:22px;	
+	width:619px;
+	height: 189px;
+	background-color: rgba(0, 170, 172, .10);
+	margin-left: 22px;
+}
+
+.bluebox h1{
+	text-align: center;
+	font-size: 32px;
+	color: rgb(0, 170, 172);
+	font-weight: 500;
+	margin-top: 35px;
+}
+
+.bluebox p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.bluebox a {
+	color: rgb(0, 170, 172);
+	font-weight: 500;
+}
+
+.bluebox a:hover {
+	color: rgb(242, 107, 33);
+}
+
+.overlay-buttons {
+	position:absolute;
+	margin-left: 12px;
+	width:98%;
+	bottom: 15px;
+	display:flex;
+}
+
+.o-buttons {
+	text-align: center;
+	width: 45%;
+	height: 25px;
+	padding: 15px 0px 15px 0px;
+	border: 3px solid rgb(242, 107, 33);
+	margin: 10px;
+	background-color: rgb(242, 107, 33);
+}
+
+.o-buttons a{
+	font-size: 20px;
+}
+
+.o-buttons:hover{
+	color: rgb(242, 107, 33);
+	background-color: #FFFFFF;
+}
+
+.o-buttons:hover a{
+	color: rgb(242, 107, 33);
+}
 
 
 /* ABOUT PAGE */
