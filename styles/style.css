@@ -815,7 +815,7 @@ legend {
 .nav-container {
 	display: flex;
 	position: absolute;
-	Top: 0;
+	top: 0;
 }
 
 .nav-container > div {
@@ -823,121 +823,102 @@ legend {
 }
 
 .logo-hand {
-	margin:-332px;
-	width: 310px;
-	height: 130px;
-	background-color: rgba(0, 170, 172, .90);
+	width: 200px;
+}
+
+.inline a {
+	font-size: 20px;
 }
 
 .nav-about {
-	width: 171px;
+	width: 102px;
 	height: 130px;
-	position: relative;
-	background-color: rgba(0, 170, 172, .90);
 }
 
 .about-sibling {
-	width: 171px;
+	width: 102px;
 	height: 130px;
-	position: absolute;
-	top:0;
 }
 
 .about a {
-	width: 171px;
-	min-height: 24px;
-	padding: 3px;
-
+	width: 102px;
+	max-height: 54px;
+	line-height: 275%;
 }
 
-
 .nav-start {
-	width: 240px;
+	width: 152px;
 	height: 130px;
-	position: relative;
-	background-color: rgba(0, 170, 172, .90);
 }
 
 .start-sibling {
-	width: 240px;
+	width: 152px;
 	height: 130px;
-	position: absolute;
-	top:0;
 }
 
 .start a {
-	min-width: 240px;
-	min-height: 24px;
-	padding: 3px;
-	background-color: #7fb438;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
+	min-width: 152px;
+	height: 49px;
+	line-height: 110%;
+	padding-top: 8px;
 }
 
 .nav-volunteer {
-	width: 240px;
+	width: 152px;
 	height: 130px;
-	position: relative;
-	background-color: rgba(0, 170, 172, .90);
 }
 
 .volunteer-sibling {
-	width: 240px;
+	width: 152px;
 	height: 130px;
-	position: absolute;
-	top:0;
 }
 
 .volunteer a {
-	min-width: 240px;
-	min-height: 24px;
-	padding: 3px;
-	background-color: #7fb438;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
+	min-width: 152px;
+	height: 54px;
+	line-height: 275%;
 }
 
+
 .nav-register {
-	width: 240px;
+	width: 163px;
 	height: 130px;
-	background-color: rgba(0, 170, 172, .90);
-	position: relative;
 }
 
 .register {
-	min-width: 240px;
-	min-height: 30px;
-	background-color: rgb(0, 170, 172);
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	display: flex;
+	min-width: 163px;
+	height: 59px;
 }
 
+
 .access {
-	padding: 8px 25px;
+	padding: 20px 10px;
 }
 
 .access:hover {
-	padding: 8px 25px;
-	background-color: #f26b21;
+	padding: 20px 10px;
 }
 
 .logo-container {
 	margin-left: 0px;
+	max-width: 168px;
 }
 
-.logo-container p {
-	font-style: italic;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 120%;
-	padding-top: 5px;
-	padding-bottom: 15px;
+.carousel img{
+    display:block;
+    width:500%;
+    max-width:200%;
 }
 
+
+
+
+
+.line {
+	width:0px;
+	height:0px;
+	margin:0px;
+}
 
 
 /* MOBILE-SIZE */
