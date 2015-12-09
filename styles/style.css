@@ -34,6 +34,9 @@ a {
 
 }
 
+.tablet {
+	visibility: hidden;
+}
 
 .main-container {
 	max-width: 1200px;
@@ -47,17 +50,18 @@ a {
 	}
 
 .nav-container {
+	width: 1200px;
 	display: flex;
 	position: absolute;
-	Top: 0;
+	top: 0;
 }
 
 .nav-container > div {
-	margin: 0;
-}
+/*	margin: 0;
+*/}
 
 .logo-hand {
-	width: 310px;
+	width: 26%;
 	height: 130px;
 	background-color: rgba(0, 170, 172, .90);
 }
@@ -71,21 +75,21 @@ a {
 }
 
 .nav-about {
-	width: 171px;
+	width: 14%;
 	height: 130px;
 	position: relative;
 	background-color: rgba(0, 170, 172, .90);
 }
 
 .about-sibling {
-	width: 171px;
+	width: 14%;
 	height: 130px;
 	position: absolute;
 	top:0;
 }
 
 .about a {
-	width: 171px;
+	width: 100%;
 	min-height: 24px;
 	padding: 3px;
 
@@ -105,21 +109,21 @@ a {
 
 
 .nav-start {
-	width: 240px;
+	width: 20%;
 	height: 130px;
 	position: relative;
 	background-color: rgba(0, 170, 172, .90);
 }
 
 .start-sibling {
-	width: 240px;
+	width: 20%;
 	height: 130px;
 	position: absolute;
 	top:0;
 }
 
 .start a {
-	min-width: 240px;
+	min-width: 100%;
 	min-height: 24px;
 	padding: 3px;
 	background-color: #7fb438;
@@ -141,21 +145,21 @@ a {
 }
 
 .nav-volunteer {
-	width: 240px;
+	width: 20%;
 	height: 130px;
 	position: relative;
 	background-color: rgba(0, 170, 172, .90);
 }
 
 .volunteer-sibling {
-	width: 240px;
+	width: 20%;
 	height: 130px;
 	position: absolute;
 	top:0;
 }
 
 .volunteer a {
-	min-width: 240px;
+	min-width: 100%;
 	min-height: 24px;
 	padding: 3px;
 	background-color: #7fb438;
@@ -177,14 +181,14 @@ a {
 }
 
 .nav-register {
-	width: 240px;
+	width: 20%;
 	height: 130px;
 	background-color: rgba(0, 170, 172, .90);
 	position: relative;
 }
 
 .register {
-	min-width: 240px;
+	min-width: 20%;
 	min-height: 30px;
 	background-color: rgb(0, 170, 172);
 	text-align: center;
@@ -206,7 +210,7 @@ a {
 	max-width: 188px;
 	max-height: 120px;
 	margin-left: 90px;
-	padding: 19px 16px;
+	padding: 22px 18px;
 	background-color: rgba(254, 255, 205, .85);
 	position:absolute;
 	top: 55px;
@@ -321,7 +325,7 @@ a {
     max-width: 1200px;
     max-height: 560px;	
     position: absolute;
-    top: 42%;
+    top: 60%;
     margin-left: 80px;
 }
 
@@ -440,6 +444,7 @@ a {
 	-moz-background-size: cover;
 	-o-background-size:cover;
 	background-size:cover;
+	overflow: hidden;
 }
 
 .description {
@@ -457,6 +462,7 @@ a {
 }
 
 .latest h4{
+	font-weight: 500;
 	padding-left: 30px;
 	padding-right: 30px;
 	line-height: 100%;
@@ -794,6 +800,34 @@ legend {
 
 /* START PAGE */
 
+
+
+
+
+
+
+/* VOLUNTEER PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TABLET-SIZE */
 
 @media (max-width: 768px) {
@@ -807,6 +841,14 @@ legend {
 }
 
 /* TABLET NAVIGATION */
+
+.tablet {
+	visibility: visible;
+}
+
+.desktop {
+	visibility: hidden;
+}
 
 .header-container{
 	height: 130px;
@@ -910,15 +952,36 @@ legend {
     max-width:200%;
 }
 
+.home-buttons {
+    top: 60%;
+    margin-left: 0;
+}
 
+.buttons {
+	margin-left: 0px;
+}
 
+.number-flex{
+	margin-left: 0px 
+}
 
+.container {
+	margin:15px;
+}
 
 .line {
 	width:0px;
 	height:0px;
 	margin:0px;
 }
+
+.subhead {
+	text-indent: 30px;
+}
+
+/*.short-paragraph {
+	margin-top: -30px;
+}*/
 
 
 /* MOBILE-SIZE */
