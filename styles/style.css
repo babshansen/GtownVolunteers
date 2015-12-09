@@ -808,7 +808,57 @@ legend {
 
 /* VOLUNTEER PAGE */
 
+.projects {
+	width: 130%;
+	height: 100%;
+	display:flex;
+}
 
+.projects h4{
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF; 
+}
+
+.details p{
+	font-size: 18px;
+	font-weight: 300;
+	color: #FFFFFF; 
+	margin-top: -15px;
+}
+
+.details h5{
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+.project-block {
+	width: 50%;
+	margin-right: 20px;
+/*	background-color: rgba(57, 39, 11, .6);
+*/	padding-left: 30px;
+}
+
+.gradient{
+    width:100%;
+    height: 200px;
+    position:absolute;
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+}
+/*.lot-image {
+	width:100%;
+	height: 100%;
+	position: absolute;
+	background:url(../media/latest-project.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size:cover;
+	overflow: hidden;
+}*/
 
 
 
