@@ -835,8 +835,7 @@ legend {
 .project-block {
 	width: 50%;
 	margin-right: 20px;
-/*	background-color: rgba(57, 39, 11, .6);
-*/	padding-left: 30px;
+	padding-left: 30px;
 }
 
 .gradient{
@@ -848,17 +847,11 @@ legend {
     background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
 }
-/*.lot-image {
+.lot-image {
 	width:100%;
 	height: 100%;
 	position: absolute;
-	background:url(../media/latest-project.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size:cover;
-	background-size:cover;
-	overflow: hidden;
-}*/
+}
 
 
 
@@ -900,7 +893,7 @@ legend {
 	visibility: hidden;
 }
 
-.header-container{
+/*.header-container{
 	height: 130px;
 	}
 
@@ -1026,7 +1019,7 @@ legend {
 }
 
 .subhead {
-	text-indent: 30px;
+	text-indent: 30px;*/
 }
 
 /*.short-paragraph {
