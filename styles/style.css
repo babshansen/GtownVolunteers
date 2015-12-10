@@ -236,6 +236,9 @@ a {
 
 .current3 a:hover {background-color: #92bf56;}
 
+
+
+
 /* CAROUSEL */
 
 .carousel{
@@ -355,6 +358,9 @@ a {
 #start {
 	top: 25%;
 }
+
+
+
 
 /* BOTTOM CONTENT */
 
@@ -503,6 +509,9 @@ a {
 	bottom: 0;
 }
 
+
+
+
 /* OVERALL SECONDARY PAGES */
 
 .main-content {
@@ -600,6 +609,9 @@ a {
 	padding-top:40px;
 	padding-bottom: 40px;
 }
+
+
+
 
 /* FORMS */
 
@@ -892,10 +904,26 @@ legend {
 	padding-right: 20px;
 }
 
+.page-numbers {
+	position:relative;
+	width: 100%;
+}
 
+.page-numbers {
+	position:relative;
+	margin-left:30%;
+	padding-top:30px;
+	padding-bottom:40px;
+	width: 100%;
+}
 
+.page-numbers a{
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(57, 39, 11);
+	margin-left: 10px;
 
-
+}
 
 
 
