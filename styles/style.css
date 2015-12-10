@@ -811,47 +811,90 @@ legend {
 .projects {
 	width: 130%;
 	height: 100%;
-	display:flex;
+	position: relative;
+}
+
+.row {
+	position: relative;
+	display: flex;
 }
 
 .projects h4{
 	font-size: 18px;
 	font-weight: 500;
 	color: #FFFFFF; 
+	position:absolute;
+	top: 0;
+	margin: 15px 20px 10px 20px;
 }
 
-.details p{
-	font-size: 18px;
-	font-weight: 300;
-	color: #FFFFFF; 
-	margin-top: -15px;
-}
-
-.details h5{
-	font-weight: 500;
-	color: #FFFFFF;
-}
-
-.project-block {
-	width: 50%;
-	margin-right: 20px;
-	padding-left: 30px;
-}
-
-.gradient{
-    width:100%;
-    height: 200px;
-    position:absolute;
-    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
-}
 .lot-image {
 	width:100%;
 	height: 100%;
-	position: absolute;
+	margin: 0;
+	padding: 0;
 }
+
+.project-block {
+	width: 300px;
+	height:300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+
+.details{
+	width:300px;
+	height:300px;
+	background-color: rgba(57, 39, 11, .70);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: opacity 0.08s ease-in;
+}
+
+.details:hover {
+	opacity:1;
+}
+
+.p-details {
+	width:294px;
+	height:274px;
+	position:absolute;
+	top: 0;
+	padding-top: 20px;
+	background-color: rgba(57, 39, 11, .70);
+	border: 3px solid rgb(242, 107, 33);
+}
+
+.p-details h4 {
+	margin: 12px 17px 10px 17px;
+}
+
+.r-details p{
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.r-details p{
+	font-size: 18px;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.r-details h5{
+	font-weight: 500;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+
 
 
 
