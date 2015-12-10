@@ -657,14 +657,42 @@ legend {
 
 /* OVERLAY STYLING */
 
-.overlay {
+/*.modal1 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.shown {
+  opacity: 1;
+  visibility: visible;
+}*/
+
+.modal {
+	width:1px;
+	height:1px;
+	opacity: 0;
+	display: none;
+}
+
+.shown {
+	width:100%;
+	height:110%;
+	opacity: 1;
+	display: block;
+	position: absolute;
+	top:0;
+	background-color: rgba(57, 39, 11, .75);
+	z-index:3;
+}
+
+/*.overlay {
 	width:100%;
 	height:110%;
 	position: absolute;
 	top:0;
 	background-color: rgba(57, 39, 11, .75);
 	z-index:3;
-}
+}*/
 
 .dialog {
 	width:665px;
@@ -702,6 +730,39 @@ legend {
 	background-color: rgba(0, 170, 172, .10);
 	margin-left: 22px;
 }
+
+.dialog2 {
+	width:665px;
+	height:600px;
+	position: relative;
+	top: 20%;
+	left:30%;	
+	background-color: #FFFFFF;
+}
+
+.bluebox2 {
+	position: relative;
+	top:22px;	
+	width:619px;
+	height: 300px;
+	background-color: rgba(0, 170, 172, .10);
+	margin-left: 22px;
+}
+
+.modal-left {
+	margin-right: 20px;
+	 
+}
+
+.modal-left img {
+	margin-left: 10px;
+	margin-bottom: 0px; 
+}
+
+.modal-wrap {
+	display:flex;
+}
+
 
 .bluebox h1{
 	text-align: center;
