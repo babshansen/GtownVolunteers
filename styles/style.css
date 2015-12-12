@@ -649,7 +649,7 @@ legend {
 	display: flex;
 }
 
-.time-wrap {
+.radio-wrap {
 	display: flex;
 }
 
@@ -1050,6 +1050,14 @@ textarea {
 	display:flex;
 }
 
+.overlay-button {
+	position:absolute;
+	margin-left: 12px;
+	width:205%;
+	bottom: 15px;
+	display:block;
+}
+
 .o-buttons {
 	text-align: center;
 	width: 45%;
@@ -1061,9 +1069,6 @@ textarea {
 	cursor: pointer;
 }
 
-.o-buttons a{
-	font-size: 20px;
-}
 
 .o-buttons:hover{
 	color: rgb(242, 107, 33);
@@ -1078,14 +1083,22 @@ textarea {
 	font-size: 20px;
 }
 
-.o-buttons:hover{
-	color: rgb(242, 107, 33);
-	background-color: #FFFFFF;
+.o-buttons h4{
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin:0;
 }
 
 .o-buttons:hover h4{
 	color: rgb(242, 107, 33);
 }
+
+.o-buttons:hover{
+	color: rgb(242, 107, 33);
+	background-color: #FFFFFF;
+}
+
 
 
 
