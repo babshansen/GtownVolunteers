@@ -1548,6 +1548,9 @@ textarea {
 /*    display: none;
 */  }
 
+.header-container {
+	z-index: 2;
+}
 
 .nav-container {
 	width: 100%;
@@ -1567,114 +1570,71 @@ textarea {
 }
 
 .inline a {
+	display:block;
 	font-size: 22px;
-	background-color: #7fb438;
+/*	width:100%;
+*/	height:50px;
+	margin-left:10%;
 	text-align: center;
 	position: relative;
 	bottom: 0;
 }
 
 .nav-about {
-	display: none;
+	width: 250px;
+	height:50px;
+	position: relative;
+	background-color: rgba(0, 170, 172, .0);
+	margin-top: 80px;
 }
 
 .about-sibling {
-	width: 171px;
-	height: 130px;
-	position: absolute;
-	top:0;
+	display:none;
 }
 
 .about a {
-	width: 171px;
+	width: 250px;
 	min-height: 24px;
 	padding: 3px;
-
-}
-
-.nav-about:hover {
-	background-color: rgba(0, 170, 172, .00);
-}
-
-.about-sibling:hover {
-	background-color: rgba(0, 170, 172, .90);
-}
-
-.about a:hover {
-	background-color: #f26b21;
 }
 
 
 .nav-start {
-	width: 240px;
-	height: 130px;
+	width: 250px;
+	height:50px;
 	position: relative;
-	background-color: rgba(0, 170, 172, .90);
+	background-color: rgba(0, 170, 172, .0);
 }
 
 .start-sibling {
-	width: 240px;
-	height: 130px;
-	position: absolute;
-	top:0;
+	display:none;
 }
 
 .start a {
-	min-width: 240px;
+	width: 250px;
 	min-height: 24px;
 	padding: 3px;
-	background-color: #7fb438;
 	text-align: center;
-	position: absolute;
+	position: relative;
 	bottom: 0;
-}
-
-.nav-start:hover {
-	background-color: rgba(0, 170, 172, .00);
-}
-
-.start-sibling:hover {
-	background-color: rgba(0, 170, 172, .90);
-}
-
-.start a:hover {
-	background-color: #f26b21;
 }
 
 .nav-volunteer {
-	width: 240px;
-	height: 130px;
+	width: 250px;
+	height:50px;
 	position: relative;
-	background-color: rgba(0, 170, 172, .90);
+	background-color: rgba(0, 170, 172, .0);
 }
 
 .volunteer-sibling {
-	width: 240px;
-	height: 130px;
-	position: absolute;
-	top:0;
+	display:hidden;
 }
 
 .volunteer a {
-	min-width: 240px;
-	min-height: 24px;
-	padding: 3px;
-	background-color: #7fb438;
-	text-align: center;
-	position: absolute;
+	width: 250px;
+	height:50px;
+	position: relative;
 	bottom: 0;
-}
-
-.nav-volunteer:hover {
-	background-color: rgba(0, 170, 172, .00);
-}
-
-.volunteer-sibling:hover {
-	background-color: rgba(0, 170, 172, .90);
-}
-
-.volunteer a:hover {
-	background-color: #f26b21;
 }
 
 .nav-register {
@@ -1691,7 +1651,7 @@ textarea {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
-	display: flex;
+	display: block;
 }
 
 .access {
@@ -1705,29 +1665,33 @@ textarea {
 
 .logo-container {
 	max-width: 60%;
-	max-height: 120px;
+	max-height: 90px;
 	margin-left: 15%;
-	padding: 20px 16px;
-	background-color: rgba(254, 255, 205, .85);
-	position:absolute;
-	top: 55px;
-	z-index:1;
+	z-index:2;
+
 }
 
+.logo-container p {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 120%;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
 
 .carousel {
-    display:block;
-    width:500%;
-/*    max-width:200%;
-*/}
+	display:none;
+}
 
+.bottom-container {
+	display:none;
+}
 
 .carousel img{
     display:block;
-    width:500%;
-/*    max-width:200%;
-*/}
-
+    width:800%;
+}
 
 .quotebox {
 	display:none;
@@ -1737,6 +1701,9 @@ textarea {
     display:none;
 }
 
+.sidebar {
+	display: none;
+}
 	/*
 	.logo-container p {
 		font-style: italic;
