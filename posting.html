@@ -3,8 +3,8 @@
 
 <head>
 	<title>Start a Project</title>
-	<!-- <script src="https://use.typekit.net/avb2kxi.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+	<script src="https://use.typekit.net/vuu1cgo.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="js/scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/style.css"></link>
 </head>
@@ -112,7 +112,7 @@
 
 				<form class="form" id="posting">
 				      
-			        <div id="aboutyou">
+			        <fieldset id="aboutproject">
 			        	<legend>ABOUT YOUR PROJECT</legend>				          
 			          	<form action="/" method="post">
 
@@ -220,10 +220,10 @@
 							Organizer Name<span class="req">*</span>
 							</label>
 							<input type="text"required autocomplete="off"/>
-						</div>
+						</fieldset>
 
-					<div class="f-buttons" onClick="openmodal1()">
-					<a href="#" id="create-your-account">PREVIEW YOUR POST</a>
+					<div class="f-buttons" onClick="openmodal2()">
+					<h4 id="create-your-account">PREVIEW YOUR POST</h4>
 					</div>
 			          
 			       <!--  <button type="submit" class="button button-block"/>Create Your Account</button> -->
@@ -248,13 +248,52 @@
 				<h1>Thanks!</h1>
 				<p>Your project has been posted. You can edit it anytime on the <a class="link" href="myprojects.html">My Projects</a> page. 
 			</div>
-			<div class="button-close"><a onClick="openmodal1()">X</a></div>
-			<div class="overlay-buttons">
+<!-- 			<div class="button-close"><a onClick="openmodal2()">X</a></div>
+ -->			<div class="overlay-buttons">
 				<div class="o-buttons" id="post">
 					<a href="posting2.html">POST ANOTHER PROJECT</a>
 				</div>
 				<div class="o-buttons" id="view">
 					<a href="volunteer.html" id="create-your-account">VIEW PROJECT PAGE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal2">
+		<div class="dialog2">
+			<div class="bluebox2">
+				<div class="modal-wrap">
+					<div class="modal-left">
+						<img src="media/lot-cleanup-sm.jpg" alt="Rockland St. Lot Clean-up">
+						<h3> SHARE THIS PROJECT </h3>
+						<div class="social">
+							<img src="media/Email.png" alt="email">
+							<img src="media/Facebook.png" alt="facebook">
+							<img src="media/Twitter.png" alt="twitter">
+						</div>
+					</div>
+					
+					<div class="modal-right">
+						<p>Lot Clean-Up Rockland St.</p>
+						<p>11/12/15, Saturday • 8AM-12-PM</p>
+						<p>10 Volunteers needed.</p>
+						<p>Where: 3569 Rockland Street</p>
+						<p>Rogue descended from astronomers great turbulent clouds. Quasar take root and flourish! Network of wormholes. Permanence of the our apple pies! Descended from astronomers trillion. Quasar take root and Euclid ship.</p>
+						<p>Flatland trillion finite but unbounded brain is the seed of intelligence a mote of dust suspended in a sunbeam culture something incredible is waiting to be known science. Billions upon billions made in the interiors of collapsing stars venture circumnavigated the sky calls to us! Vastness is bearable only through love culture, kindling the energy hidden in matter stirred by starlight quasar.</p> 
+						<p>Organizer: Babs Hansen</p>
+					</div>
+				</div> 
+
+			</div>
+
+<!-- 			<div class="button-close"><a onClick="openmodal2()">X</a></div>
+ -->			<div class="overlay-buttons">
+				<div class="o-buttons" id="edit" onClick="openmodal2()">
+					<h4>EDIT</h4>
+				</div>
+				<div class="o-buttons" id="post" onClick="openmodal1();openmodal2()">
+					<h4>POST</h4>
 				</div>
 			</div>
 		</div>

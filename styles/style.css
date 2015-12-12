@@ -616,22 +616,43 @@ a {
 /* FORMS */
 
 .form {
-	width: 100%;
+	width: 110%;
 	margin-top: 0px;
+	overflow-y: scroll; 
 }
+
+fieldset {
+	background-color:rgba(0, 170, 172, .1);
+	width:80%;
+	margin-bottom: 40px;
+	border: none;
+}
+
 
 legend {
 	color: #FFFFFF;
 	font-size: 16px;
 	font-weight: 300;
 	background-color: rgb(0, 170, 172);
-	padding: 2px 10px;
+	padding: 2px 20px;
+	margin-bottom: 10px;
 	}
 
 .field-wrap {
-
+  position:relative;
+  margin-bottom:40px;
+  margin-right:10px;
 }
 
+.double-row {
+	display: flex;
+}
+
+input {
+	font-size: 120%;
+
+
+}
 .f-buttons {
 	text-align: center;
 	width: 420px;
@@ -655,17 +676,202 @@ legend {
 	color: rgb(242, 107, 33);
 }
 
-/* OVERLAY STYLING */
 
-/*.modal1 {
-	opacity: 0;
-	visibility: hidden;
+@import "compass/css3";
+/*
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}*/
+
+/*a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+*/
+/*.form {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}*/
+
+/*.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
 }
 
-.shown {
-  opacity: 1;
-  visibility: visible;
-}*/
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+h1 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+*/
+
+
+
+
+
+
+
+/* OVERLAY STYLING */
+
+
 
 .modal {
 	width:1px;
@@ -684,6 +890,8 @@ legend {
 	background-color: rgba(57, 39, 11, .75);
 	z-index:3;
 }
+
+
 
 /*.overlay {
 	width:100%;
@@ -712,6 +920,7 @@ legend {
 	margin: 5px;
 	position: absolute;
 	right:0;
+	top:0;
 }
 
 .button-close a {
@@ -733,7 +942,7 @@ legend {
 
 .dialog2 {
 	width:665px;
-	height:600px;
+	height:610px;
 	position: relative;
 	top: 20%;
 	left:30%;	
@@ -744,25 +953,47 @@ legend {
 	position: relative;
 	top:22px;	
 	width:619px;
-	height: 300px;
+	height: 480px;
 	background-color: rgba(0, 170, 172, .10);
 	margin-left: 22px;
 }
 
-.modal-left {
-	margin-right: 20px;
-	 
-}
-
-.modal-left img {
-	margin-left: 10px;
-	margin-bottom: 0px; 
-}
-
 .modal-wrap {
+	position: absolute;
 	display:flex;
 }
 
+.modal-left {
+	margin-right: 20px;	 
+}
+
+.modal-left img {
+	margin: 20px 40px 0px 20px;
+	display: block; 
+}
+
+.modal-left h3 {
+	background-color: rgb(0, 170, 172);
+	margin-bottom: 0px;
+	height: 31px;
+	width: 198px; 
+	margin-top: 0;
+	font-size: 14px;
+	font-weight: 300;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-top: 10px;
+	line-height: 150%;
+}
+
+.social {
+	display: flex;
+	margin-left: 20px;
+}
+
+.social img{
+	margin: 10px;
+}
 
 .bluebox h1{
 	text-align: center;
@@ -805,6 +1036,7 @@ legend {
 	border: 3px solid rgb(242, 107, 33);
 	margin: 10px;
 	background-color: rgb(242, 107, 33);
+	cursor: pointer;
 }
 
 .o-buttons a{
@@ -819,6 +1051,20 @@ legend {
 .o-buttons:hover a{
 	color: rgb(242, 107, 33);
 }
+
+.o-buttons h4{
+	font-size: 20px;
+}
+
+.o-buttons:hover{
+	color: rgb(242, 107, 33);
+	background-color: #FFFFFF;
+}
+
+.o-buttons:hover h4{
+	color: rgb(242, 107, 33);
+}
+
 
 
 /* ABOUT PAGE */
