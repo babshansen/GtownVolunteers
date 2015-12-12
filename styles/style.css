@@ -626,6 +626,7 @@ fieldset {
 	width:80%;
 	margin-bottom: 40px;
 	border: none;
+	padding: 20px;
 }
 
 
@@ -640,7 +641,7 @@ legend {
 
 .field-wrap {
   position:relative;
-  margin-bottom:40px;
+  margin-bottom:20px;
   margin-right:10px;
 }
 
@@ -648,11 +649,29 @@ legend {
 	display: flex;
 }
 
-input {
-	font-size: 120%;
-
-
+.time-wrap {
+	display: flex;
 }
+
+input {
+	font-size: 140%;
+	color: rgb(57, 39, 11);
+	background-color: rgba(255, 255, 255, .0001);
+	border: 2px solid rgb(0, 170, 172);
+	border-radius: 5px;
+	display:block;
+	width: 100%;
+	margin-right: 10px;
+}
+
+input:hover {
+	background-color: rgba(255, 255, 255, .99);
+}
+input:focus {
+	background-color: rgba(255, 255, 255, .99);
+}
+
+
 .f-buttons {
 	text-align: center;
 	width: 420px;
@@ -663,8 +682,11 @@ input {
 	background-color: rgb(242, 107, 33);
 }
 
-.f-buttons a{
+.f-buttons h4{
 	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin:0;
 }
 
 .f-buttons:hover{
@@ -672,7 +694,7 @@ input {
 	background-color: #FFFFFF;
 }
 
-.f-buttons:hover a{
+.f-buttons:hover h4{
 	color: rgb(242, 107, 33);
 }
 
