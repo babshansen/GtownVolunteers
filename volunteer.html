@@ -288,7 +288,7 @@
 			</div>
 
 			<div class="button-close"><a onClick="openmodal3()">X</a></div>
-			<div class="overlay-buttons">
+			<div class="overlay-button">
 				<div class="o-buttons" id="volunteer" onClick="openmodal3();openmodal4()">
 					<h4>VOLUNTEER FOR THIS PROJECT</h4>
 				</div>
@@ -298,18 +298,85 @@
 	</div>
 
 	<div class="modal" id="modal4">
+		<div class="dialog4">
+			<div class="bluebox">
+				<form class="form" id="posting">
+				      
+			        <fieldset id="aboutproject">
+				        	<legend>ABOUT YOU</legend>				          
+				          	<form action="/" method="post">
+				          
+							<div class="double-row">
+								<div class="field-wrap">
+								<label>
+								First Name<span class="req">*</span>
+								</label>
+								<input type="text" required autocomplete="off" />
+								</div>
+
+								<div class="field-wrap">
+								<label>
+								Last Name<span class="req">*</span>
+								</label>
+								<input type="text"required autocomplete="off"/>
+								</div>
+							</div>
+
+							<div class="field-wrap">
+								<label>
+								Email Address<span class="req">*</span>
+								</label>
+								<input type="email"required autocomplete="off"/>
+							</div>						
+
+							<div class="field-wrap">
+								<label>
+								Phone Number<span class="req">*</span>
+								</label>
+								<input type="tel"required autocomplete="off"/>
+							</div>
+				          
+							<div class="field-wrap">
+								<label>
+								Best Way To Contact You<span class="req">*</span>
+								</label>
+								<div class="radio-wrap">
+									<input type="radio" name="contact" value="email" required autocomplete="off"/>email								
+									<input type="radio" name="contact" value="phone" required autocomplete="off"/>phone call								
+									<input type="radio" name="contact" value="text" required autocomplete="off"/>text
+								</div>
+								
+							</div>
+
+							<div class="field-wrap">
+								<label>
+
+								</label>
+								<textarea name="description"required autocomplete="off" />Message the organizer here, if needed </textarea>
+							</div>
+
+							</div>
+						</fieldset>
+
+			<div class="button-close"><a onClick="openmodal4()">X</a></div>
+			<div class="overlay-button">
+				<div class="o-buttons" id="org" onClick="openmodal4();openmodal5()">
+					<h4>SEND INFO TO ORGANIZER</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal5">
 		<div class="dialog">
 			<div class="bluebox">
-				<h1>Thanks!</h1>
-				<p>Your project has been posted. You can edit it anytime on the <a class="link" href="myprojects.html">My Projects</a> page. 
+				<h1>Thank you and see you there!</h1>
+				<p>Your contact info has been sent to the organizer and a confirmation has been sent to your email. 
 			</div>
-			<div class="button-close"><a onClick="openmodal3()">X</a></div>
-			<div class="overlay-buttons">
-				<div class="o-buttons" id="post">
-					<a href="posting2.html">POST ANOTHER PROJECT</a>
-				</div>
-				<div class="o-buttons" id="view">
-					<a href="volunteer.html" id="create-your-account">VIEW PROJECT PAGE</a>
+			<div class="button-close"><a onClick="openmodal5()">X</a></div>
+			<div class="overlay-button">
+				<div class="o-buttons" id="return" onClick="openmodal5()">
+					<h4>RETURN TO PROJECTS</h4>
 				</div>
 			</div>
 		</div>
