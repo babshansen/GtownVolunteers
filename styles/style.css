@@ -1543,19 +1543,15 @@ textarea {
 
 /* MOBILE-SIZE */
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .facet_sidebar {
 /*    display: none;
 */  }
 
 
-.header-container{
-	height: 130px;
-	}
-
 .nav-container {
-	width: 1200px;
-	display: flex;
+	width: 100%;
+	display: block;
 	position: absolute;
 	top: 0;
 }
@@ -1565,7 +1561,7 @@ textarea {
 */}
 
 .logo-hand {
-	width: 310px;
+	width: 100%;
 	height: 130px;
 	background-color: rgba(0, 170, 172, .90);
 }
@@ -1574,15 +1570,12 @@ textarea {
 	font-size: 22px;
 	background-color: #7fb438;
 	text-align: center;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 }
 
 .nav-about {
-	width: 171px;
-	height: 130px;
-	position: relative;
-	background-color: rgba(0, 170, 172, .90);
+	display: none;
 }
 
 .about-sibling {
@@ -1711,9 +1704,9 @@ textarea {
 }
 
 .logo-container {
-	max-width: 188px;
+	max-width: 60%;
 	max-height: 120px;
-	margin-left: 90px;
+	margin-left: 15%;
 	padding: 20px 16px;
 	background-color: rgba(254, 255, 205, .85);
 	position:absolute;
@@ -1721,20 +1714,38 @@ textarea {
 	z-index:1;
 }
 
-.logo-container p {
-	font-style: italic;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 120%;
-	padding-top: 5px;
-	padding-bottom: 15px;
+
+.carousel {
+    display:block;
+    width:500%;
+/*    max-width:200%;
+*/}
+
+
+.carousel img{
+    display:block;
+    width:500%;
+/*    max-width:200%;
+*/}
+
+
+.quotebox {
+	display:none;
 }
 
-.current1 {background-color: rgba(0, 170, 172, .90); cursor:default;}
+.home-buttons {
+    display:none;
+}
 
-.current1:hover {background-color: rgba(0, 170, 172, .90); cursor:default;}
-
-.current2:hover {background-color: rgba(0, 170, 172, .00); cursor:default;}
+	/*
+	.logo-container p {
+		font-style: italic;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 120%;
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}*/
 
 .current3 a {background-color: #b9dd56; cursor:default;}
 
