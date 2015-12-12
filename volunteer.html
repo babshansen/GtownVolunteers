@@ -298,7 +298,7 @@
 	</div>
 
 	<div class="modal" id="modal4">
-		<div class="dialog">
+		<div class="dialog4">
 			<div class="bluebox">
 				<form class="form" id="posting">
 				      
@@ -341,18 +341,18 @@
 								Best Way To Contact You<span class="req">*</span>
 								</label>
 								<div class="radio-wrap">
-									<input type="radio" name="contact" value="email" required autocomplete="off"/>								
-									<input type="radio" name="contact" value="phone" required autocomplete="off"/>								
-									<input type="radio" name="contact" value="text" required autocomplete="off"/>
+									<input type="radio" name="contact" value="email" required autocomplete="off"/>email								
+									<input type="radio" name="contact" value="phone" required autocomplete="off"/>phone call								
+									<input type="radio" name="contact" value="text" required autocomplete="off"/>text
 								</div>
 								
 							</div>
 
 							<div class="field-wrap">
 								<label>
-								Address2<span class="req">*</span>
+
 								</label>
-								<input type="text"required autocomplete="off"/>
+								<textarea name="description"required autocomplete="off" />Message the organizer here, if needed </textarea>
 							</div>
 
 							</div>
@@ -370,18 +370,15 @@
 	<div class="modal" id="modal5">
 		<div class="dialog">
 			<div class="bluebox">
-				<h1>Thanks!</h1>
-				<p>Your project has been posted. You can edit it anytime on the page. 
+				<h1>Thank you and see you there!</h1>
+				<p>Your contact info has been sent to the organizer and a confirmation has been sent to your email. 
 			</div>
 			<div class="button-close"><a onClick="openmodal5()">X</a></div>
-<!-- 			<div class="overlay-buttons">
-				<div class="f-buttons" id="post">
-					<a href="posting2.html">POST ANOTHER PROJECT</a>
+			<div class="overlay-button">
+				<div class="o-buttons" id="return" onClick="openmodal5()">
+					<h4>RETURN TO PROJECTS</h4>
 				</div>
-				<div class="f-buttons" id="view">
-					<a href="volunteer.html" id="create-your-account">VIEW PROJECT PAGE</a>
-				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 

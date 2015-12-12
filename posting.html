@@ -151,8 +151,8 @@
 							</label>
 							<form action="./" method="GET">
 								<select name="AM-PM">
-								<option value="AM">PM</option>
-								<option value="AM">PM</option>
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
 							</select>
 							</div>
 
@@ -187,7 +187,21 @@
 							Organizer Name<span class="req">*</span>
 							</label>
 							<input type="text"required autocomplete="off"/>
-						</fieldset>
+
+						<div class="double-row">
+							<div class="field-wrap">
+							<label>
+							Upload an image
+							</label>
+							<input type="file" name="user-image" id="file"/>
+							</div>
+							
+							<div class="field-wrap">
+							<input type="submit" value="Upload" id="submit"/>
+							</div>
+						</div>
+
+					</fieldset>
 
 					<div class="f-buttons" onClick="openmodal2()">
 					<h4 id="create-your-account">PREVIEW YOUR POST</h4>

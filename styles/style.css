@@ -226,15 +226,15 @@ a {
 	padding-bottom: 15px;
 }
 
-.current1 {background-color: rgba(0, 170, 172, .90);}
+.current1 {background-color: rgba(0, 170, 172, .90); cursor:default;}
 
-.current1:hover {background-color: rgba(0, 170, 172, .90);}
+.current1:hover {background-color: rgba(0, 170, 172, .90); cursor:default;}
 
-.current2:hover {background-color: rgba(0, 170, 172, .00);}
+.current2:hover {background-color: rgba(0, 170, 172, .00); cursor:default;}
 
-.current3 a {background-color: #92bf56;}
+.current3 a {background-color: #b9dd56; cursor:default;}
 
-.current3 a:hover {background-color: #92bf56;}
+.current3 a:hover {background-color: #b9dd56; cursor:default;}
 
 
 
@@ -671,6 +671,9 @@ input:focus {
 	background-color: rgba(255, 255, 255, .99);
 }
 
+option {
+
+}
 
 .f-buttons {
 	text-align: center;
@@ -682,7 +685,7 @@ input:focus {
 	background-color: rgb(242, 107, 33);
 }
 
-.f-buttons h4{
+.f-buttons a{
 	font-size: 20px;
 	font-weight: 300;
 	color: #FFFFFF;
@@ -694,10 +697,21 @@ input:focus {
 	background-color: #FFFFFF;
 }
 
-.f-buttons:hover h4{
+.f-buttons:hover a{
 	color: rgb(242, 107, 33);
 }
 
+
+.f-buttons h4{
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin:0;
+}
+
+.f-buttons:hover h4{
+	color: rgb(242, 107, 33);
+}
 
 @import "compass/css3";
 /*
@@ -913,17 +927,6 @@ textarea {
 	z-index:3;
 }
 
-
-
-/*.overlay {
-	width:100%;
-	height:110%;
-	position: absolute;
-	top:0;
-	background-color: rgba(57, 39, 11, .75);
-	z-index:3;
-}*/
-
 .dialog {
 	width:665px;
 	height:315px;
@@ -980,6 +983,24 @@ textarea {
 	margin-left: 22px;
 }
 
+.dialog4 {
+	width:665px;
+	height:800px;
+	position: relative;
+	top: 20%;
+	left:30%;	
+	background-color: #FFFFFF;
+}
+
+/*.bluebox4 {
+	position: relative;
+	top:22px;	
+	width:619px;
+	height: 480px;
+	background-color: rgba(0, 170, 172, .10);
+	margin-left: 22px;
+}*/
+
 .modal-wrap {
 	position: absolute;
 	display:flex;
@@ -1033,7 +1054,7 @@ textarea {
 	padding-right: 70px;
 }
 
-.bluebox a {
+.bluebox a{
 	color: rgb(0, 170, 172);
 	font-weight: 500;
 }
@@ -1041,6 +1062,7 @@ textarea {
 .bluebox a:hover {
 	color: rgb(242, 107, 33);
 }
+
 
 .overlay-buttons {
 	position:absolute;
@@ -1069,6 +1091,12 @@ textarea {
 	cursor: pointer;
 }
 
+.o-buttons a{
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin:0;
+}
 
 .o-buttons:hover{
 	color: rgb(242, 107, 33);
@@ -1098,7 +1126,6 @@ textarea {
 	color: rgb(242, 107, 33);
 	background-color: #FFFFFF;
 }
-
 
 
 
@@ -1151,13 +1178,6 @@ textarea {
 	left:70%;
 	position: relative;
 }
-
-/* START PAGE */
-
-
-
-
-
 
 
 /* VOLUNTEER PAGE */
