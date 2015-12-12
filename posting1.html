@@ -112,7 +112,7 @@
 
 				<form class="form" id="posting">
 				      
-			        <fieldset id="aboutproject">
+			        <div id="aboutyou">
 			        	<legend>ABOUT YOUR PROJECT</legend>				          
 			          	<form action="/" method="post">
 
@@ -220,10 +220,10 @@
 							Organizer Name<span class="req">*</span>
 							</label>
 							<input type="text"required autocomplete="off"/>
-						</fieldset>
+						</div>
 
-					<div class="f-buttons" onClick="openmodal2()">
-					<h4 id="create-your-account">PREVIEW YOUR POST</h4>
+					<div class="f-buttons" onClick="openmodal1()">
+					<a href="#" id="create-your-account">PREVIEW YOUR POST</a>
 					</div>
 			          
 			       <!--  <button type="submit" class="button button-block"/>Create Your Account</button> -->
@@ -243,24 +243,6 @@
 	</div>
 
 	<div class="modal" id="modal1">
-		<div class="dialog">
-			<div class="bluebox">
-				<h1>Thanks!</h1>
-				<p>Your project has been posted. You can edit it anytime on the <a class="link" href="myprojects.html">My Projects</a> page. 
-			</div>
-<!-- 			<div class="button-close"><a onClick="openmodal2()">X</a></div>
- -->			<div class="overlay-buttons">
-				<div class="o-buttons" id="post">
-					<a href="posting2.html">POST ANOTHER PROJECT</a>
-				</div>
-				<div class="o-buttons" id="view">
-					<a href="volunteer.html" id="create-your-account">VIEW PROJECT PAGE</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="modal2">
 		<div class="dialog2">
 			<div class="bluebox2">
 				<div class="modal-wrap">
@@ -287,13 +269,13 @@
 
 			</div>
 
-<!-- 			<div class="button-close"><a onClick="openmodal2()">X</a></div>
- -->			<div class="overlay-buttons">
-				<div class="o-buttons" id="edit" onClick="openmodal2()">
-					<h4>EDIT</h4>
+			<div class="button-close"><a onClick="openmodal1()">X</a></div>
+			<div class="overlay-buttons">
+				<div class="o-buttons" id="post">
+					<a href="posting2.html">EDIT</a>
 				</div>
-				<div class="o-buttons" id="post" onClick="openmodal1();openmodal2()">
-					<h4>POST</h4>
+				<div class="o-buttons" id="view">
+					<a onClick="openmodal2()" id="create-your-account">POST</a>
 				</div>
 			</div>
 		</div>
