@@ -628,6 +628,12 @@ a {
 
 /* FORMS */
 
+
+
+.req {
+	color: rgb(242, 107, 33);
+}
+
 .form {
 	width: 110%;
 	margin-top: 0px;
@@ -765,7 +771,10 @@ select {
 	color: rgb(242, 107, 33);
 }
 
-
+.radio-wrap input{
+	margin: 0;
+	padding:0;
+}
 
 /* OVERLAY STYLING */
 
