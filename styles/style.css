@@ -592,12 +592,20 @@ a {
 	margin-right: 225px;
 }
 
+.main-view h4{
+	color: rgb(0, 170, 172);
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 0px;
+}
+
 .main-view h3{
 	color: rgb(242, 107, 33);
 	font-size: 20px;
 	font-weight: 500;
 	margin-top: 0px;
 }
+
 
 .breadcrumbs a{
 	font-size: 12px;
@@ -614,6 +622,10 @@ a {
 	font-size: 16px;
 	font-weight: 500;
 	color: rgb(0, 170, 172);
+}
+
+#par-space {
+	margin-bottom:-60px;
 }
 
 
@@ -958,7 +970,7 @@ textarea {
 
 .shown {
 	width:100%;
-	height:110%;
+	height:150%;
 	opacity: 1;
 	display: block;
 	position: absolute;
@@ -1032,15 +1044,6 @@ textarea {
 	background-color: #FFFFFF;
 }
 
-/*.bluebox4 {
-	position: relative;
-	top:22px;	
-	width:619px;
-	height: 480px;
-	background-color: rgba(0, 170, 172, .10);
-	margin-left: 22px;
-}*/
-
 .modal-wrap {
 	position: absolute;
 	display:flex;
@@ -1072,6 +1075,10 @@ textarea {
 .social {
 	display: flex;
 	margin-left: 20px;
+}
+
+.social img:hover {
+	opacity:0.5;
 }
 
 .social img{
